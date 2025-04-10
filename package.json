@@ -2,8 +2,8 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://shiva019-sms.github.io/my-portfolio-website",
   "dependencies": {
-    "homepage": "https://shiva019-sms.github.io/my-portfolio-website",
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.1.1",
     "@testing-library/jest-dom": "^6.1.5",
