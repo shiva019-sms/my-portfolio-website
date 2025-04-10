@@ -11,7 +11,7 @@ const About = () => {
     },
     {
       degree: "Diploma in Electronics and Communication Engineering",
-      institution: "BTI Institute Of Technology and Science - Hindupur",
+      institution: "BIT Institute Of Technology and Science - Hindupur",
       duration: "2018-2021",
       grade: "83.04%"
     }
@@ -50,9 +50,9 @@ const About = () => {
         >
           <h2 className="text-4xl font-bold mb-8">About Me</h2>
           <p className="text-lg text-gray-300 leading-relaxed">
-            Eager to excel in challenging roles within a professional environment, driven by a strong interest in IT and Software Engineering. 
-            Leveraging a solid foundation in Electronics and Communication Engineering, I am seeking entry-level opportunities to apply my skills 
-            in designing, implementing, and maintaining robust IT systems, contributing to organizational growth and innovation.
+            I am H Siva Kumar, an Electronics and Communication Engineering graduate. I enjoy working in IT and software fields. 
+            My training at CDAC in High-Performance Computing and AI helped me learn new skills. I like solving problems and working with teams.
+            Eager to apply my skills in designing, implementing, and maintaining robust IT systems, contributing to organizational growth and innovation.
           </p>
         </motion.div>
 
