@@ -62,9 +62,9 @@ const About = () => {
         >
           <h3 className="text-2xl font-bold mb-8 text-center">Education</h3>
           <div className="space-y-8">
-            {education.map((edu, index) => (
+            {education.map((edu) => (
               <motion.div
-                key={index}
+                key={`education-${edu.institution.replace(/\s+/g, '-').toLowerCase()}`}
                 variants={itemVariants}
                 className="relative pl-8"
               >

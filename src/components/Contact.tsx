@@ -80,9 +80,9 @@ const Contact = () => {
             variants={containerVariants}
             className="grid md:grid-cols-2 gap-8"
           >
-            {contactInfo.map((info, index) => (
+            {contactInfo.map((info) => (
               <motion.a
-                key={index}
+                key={`contact-${info.type.toLowerCase()}`}
                 href={info.link}
                 target="_blank"
                 rel="noopener noreferrer"

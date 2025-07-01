@@ -55,9 +55,9 @@ const Projects = () => {
         <h2 className="text-4xl font-bold text-center mb-16">Projects</h2>
         
         <div className="grid md:grid-cols-2 gap-8">
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <motion.div
-              key={index}
+              key={`project-${project.title.replace(/\s+/g, '-').toLowerCase()}`}
               variants={itemVariants}
               className="group relative bg-white/5 backdrop-blur-lg rounded-2xl p-6 hover:bg-white/10 transition-all duration-300"
             >
@@ -69,16 +69,16 @@ const Projects = () => {
                 <div className="mb-6">
                   <h4 className="text-lg font-semibold mb-2">Key Features:</h4>
                   <ul className="list-disc list-inside text-gray-300">
-                    {project.highlights.map((highlight, i) => (
-                      <li key={i}>{highlight}</li>
+                    {project.highlights.map((highlight) => (
+                      <li key={`highlight-${highlight.slice(0, 20).replace(/\s+/g, '-').toLowerCase()}`}>{highlight}</li>
                     ))}
                   </ul>
                 </div>
 
                 <div className="flex flex-wrap gap-2">
-                  {project.tech.map((tech, i) => (
+                  {project.tech.map((tech) => (
                     <span
-                      key={i}
+                      key={`tech-${tech.replace(/\s+/g, '-').toLowerCase()}`}
                       className="px-3 py-1 text-sm bg-white/10 rounded-full"
                     >
                       {tech}

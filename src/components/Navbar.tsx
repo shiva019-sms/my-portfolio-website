@@ -25,8 +25,13 @@ const Navbar = () => {
             <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-blue-400">
               <img
                 src="/profile.png"
-                alt="Profile"
+                                  alt="H Siva Kumar - Software Engineer"
                 className="w-full h-full object-cover"
+                onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
+                  const target = e.target as HTMLImageElement;
+                  target.style.display = 'none';
+                }}
+                loading="lazy"
               />
             </div>
             <span className="text-xl font-bold">H Siva Kumar</span>

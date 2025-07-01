@@ -135,9 +135,9 @@ const Skills = () => {
         <h2 className="text-4xl font-bold text-center mb-16">Technical Skills</h2>
 
         <div className="space-y-12">
-          {skillCategories.map((category, categoryIndex) => (
+          {skillCategories.map((category) => (
             <motion.div
-              key={categoryIndex}
+              key={`category-${category.title.replace(/\s+/g, '-').toLowerCase()}`}
               variants={containerVariants}
               className="space-y-6"
             >
@@ -145,9 +145,9 @@ const Skills = () => {
                 {category.title}
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                {category.skills.map((skill, skillIndex) => (
+                {category.skills.map((skill) => (
                   <motion.div
-                    key={skillIndex}
+                    key={`skill-${skill.name.replace(/\s+/g, '-').toLowerCase()}`}
                     variants={itemVariants}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}

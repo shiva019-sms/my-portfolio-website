@@ -38,6 +38,8 @@ const Hero = () => {
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
               }}
+              role="img"
+              aria-label="H Siva Kumar - Software Engineer headshot"
             />
           </motion.div>
 
@@ -55,7 +57,7 @@ const Hero = () => {
             <div className="flex justify-center items-center gap-1.5 mb-8 overflow-x-auto whitespace-nowrap w-full">
               {skills.map((skill, index) => (
                 <motion.div
-                  key={skill}
+                  key={`hero-skill-${skill.replace(/\s+/g, '-').toLowerCase()}`}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.4 + index * 0.1 }}
